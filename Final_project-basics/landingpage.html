@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Roses</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:wght@400;500&display=swap">
+   <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #efdecd, #40826d);
+    }
+
+    .header {
+      text-align: center;
+      color: black;
+      background-color: #ffbf00;
+      padding-top: 5%;
+    }
+
+    .header h1 {
+      font-family: 'Cedarville Cursive', cursive;
+      font-size: 2.5rem;
+    }
+
+    .header h2 {
+      font-size: 1.5rem;
+    }
+
+    .intro {
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    .intro img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+    }
+
+    .intro h2 {
+      font-weight: 400;
+      margin-top: 1rem;
+    }
+
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+
+    .section {
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-family:'Open Sans', sans-serif;
+      color: #40826d;
+      font-size: 26px;
+    }
+
+    .image-1 {
+      width: 200px;
+      height: 200px;
+      margin-top: 1rem;
+    }
+
+    .section p {
+      width: 70%;
+      left: 25%;
+      top:10%;
+      margin: 1rem auto;
+      text-align: justify;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 26px;
+      line-height: 1.5;
+      
+    }
+    .section a{
+      color: red;
+    }
+
+    button {
+      display: block;
+      margin: 30px auto;
+      padding: 15px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+      border-radius: 40px;
+      transition: all 200ms ease-in-out;
+      background: #40826d;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      border: 1px solid #885df1;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: white;
+      color: red;
+    }
+
+    
+    .footer {
+        background-color: #ffbf00;
+        color: black;
+        font-family:monospace;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+
+    .footer p {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Red Roses</h1>
+    <h2>The perfect gift to celebrate love <span class="emoji" ></span> <span style="color: red;">&#x2764;</span></h2>
+  </div>
+  <div class="intro">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/050/original/img1.jpg?1703229887" alt="Image Description">
+    <h2><span class="highlight">Love</span> is a <strong>beautiful thing,</strong> adorned with the timeless elegance of roses,specifically Red Roses</h2>
+  </div>
+  <div class="section">
+    <h2>Why Red Roses?</h2>
+     <hr>
+      <img class="image-1"src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/051/original/red_roses.jpg?1703230015" alt="Red Roses Image">
+      <p><a href="https://en.wikipedia.org/wiki/Red_rose" >Red</a> roses have long been recognized as a universal symbol of love, romance, and passion. 
+      Their vibrant color and velvety texture evoke strong emotions and convey a profound message 
+      of affection.</br>Red roses are often seen as the ultimate expression of romantic love. 
+      They symbolize <strong>passion, desire, and deep emotions</strong>.Beyond romantic love, red roses also represent deep affection and unwavering devotion.
+      </br>They are a timeless way to communicate intense feelings.Red roses are a classic choice for celebrating anniversaries,
+      especially significant milestones in a romantic relationship.It is the perfect gift to say <strong>"I love you!!.</strong></p>
+    </div>
+  </div>
+  <hr>
+  <button>Get your Roses</button> 
+  <div class="footer">
+    <p class="tag">Coded by Ruth Musungu</p>
+        <div>
+            <p>&copy; roses @roses4love</p>
+        </div>
+        
+  </div>  
+    <script>
+    function roses() {
+      let name = prompt("What is your name?");
+      if (name) {
+        let email = prompt("What is your email address?");
+        if (email) {
+          alert("Thank you, " + name + "! We'll get in touch soon.");
+        } else {
+          alert("Email address is required.");
+        }
+      } else {
+        alert("Name is required.");
+      }
+    }
+
+    let btn = document.querySelector("button");
+    btn.addEventListener("click", roses);
+  </script>
+</body>
+</html>
